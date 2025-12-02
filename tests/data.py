@@ -2,10 +2,6 @@ from praktikum.ingredient_types import INGREDIENT_TYPE_SAUCE, INGREDIENT_TYPE_FI
 
 
 class DataTest:
-
-    BUNS = [("black bun", 100),
-            ("white bun", 200),
-            ("red bun", 300)]
     
     INGREDIENTS = [(INGREDIENT_TYPE_SAUCE, "hot sauce", 100),
                    (INGREDIENT_TYPE_SAUCE, "sour cream", 200),
@@ -17,3 +13,27 @@ class DataTest:
     #значения класса Burgers по умолчанию
     BURGER_INIT_BUN = None
     BURGER_INIT_INGREDIENTS = []
+
+    PRICE_PARAM = [[24.5, [], 49.0],
+                   [24.5, [50.5], 99.5]]
+    
+    RECEIPT_PARAM = [("White Bun",
+                      [],
+                      ["(==== White Bun ====)",
+                       "(==== White Bun ====)\n",
+                       "Price: 200.0"]),
+                     ("Black Bun",
+                      [("Cheese", "TOPPING", 50.0)],
+                      ["(==== Black Bun ====)",
+                       "= topping Cheese =",
+                       "(==== Black Bun ====)\n",
+                       "Price: 250.0",])]
+    
+class DataMock:
+    
+    BUN_NAME = "black bun"
+    BUN_PRICE = 100.0
+
+    INGREDIENT_TYPE = INGREDIENT_TYPE_SAUCE
+    INGREDIENT_NAME = "hot sauce"
+    INGREDIENT_PRICE = 100.0
