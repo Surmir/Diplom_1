@@ -9,10 +9,6 @@ class DataTest:
                    (INGREDIENT_TYPE_FILLING, "cutlet", 100),
                    (INGREDIENT_TYPE_FILLING, "dinosaur", 200),
                    (INGREDIENT_TYPE_FILLING, "sausage", 300)]
-    
-    #значения класса Burgers по умолчанию
-    BURGER_INIT_BUN = None
-    BURGER_INIT_INGREDIENTS = []
 
     PRICE_PARAM = [[24.5, [], 49.0],
                    [24.5, [50.5], 99.5]]
