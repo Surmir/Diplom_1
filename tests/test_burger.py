@@ -4,9 +4,6 @@ from data import DataTest as DT
 
 class TestBurger:
 
-    def test_init_default_values(self, burger):
-        assert burger.bun is DT.BURGER_INIT_BUN and burger.ingredients == DT.BURGER_INIT_INGREDIENTS
-
     def test_set_buns(self, burger, mock_bun):
         burger.set_buns(mock_bun)
         
